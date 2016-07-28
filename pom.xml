@@ -65,28 +65,6 @@
         <groupId>io.fabric8</groupId>
         <artifactId>fabric8-maven-plugin</artifactId>
         <version>${fabric8.maven.plugin.version}</version>
-        <configuration>
-          <customizer>
-            <java.app.mainClass>org.apache.camel.cdi.Main</java.app.mainClass>
-          </customizer>
-          <images>
-            <image>
-              <name>${project.artifactId}:${project.version}</name>
-              <alias>cassandra</alias>
-              <build>
-                <from>gcr.io/google-samples/cassandra:v9</from>
-                <assembly>
-                  <basedir>/deployments</basedir>
-                  <descriptorRef>artifact</descriptorRef>
-                </assembly>
-                <env>
-                  <JAVA_LIB_DIR>/deployments</JAVA_LIB_DIR>
-                  <JAVA_MAIN_CLASS>org.apache.camel.cdi.Main</JAVA_MAIN_CLASS>
-                </env>
-              </build>
-            </image>
-          </images>
-        </configuration>
         <executions>
           <execution>
             <goals>

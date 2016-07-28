@@ -35,6 +35,7 @@ spec:
                 fieldRef:
                   fieldPath: status.podIP
           name: cassandra
+          image: gcr.io/google-samples/cassandra:v9
           ports:
             - containerPort: 7000
               name: intra-node
