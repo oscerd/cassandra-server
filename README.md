@@ -1,6 +1,6 @@
 # Cassandra Server QuickStart
 
-This quickstart exposes a 3 nodes Cassandra cluster.
+This quickstart exposes a 3 nodes Cassandra cluster. The configuration is inspired to the [Kubernetes Cassandra example](https://github.com/kubernetes/kubernetes/tree/master/examples/storage/cassandra)
 
 ### Building
 
